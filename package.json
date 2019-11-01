@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "plugin to use reduce function with operator",
   "main": "src/index.js",
+  "repository": "https://github.com/lakhansamani/babel-plugin-reduce-with-operator.git",
   "author": "Lakhan Samani <lakhan.m.samani@gmail.com>",
   "license": "MIT",
   "devDependencies": {
