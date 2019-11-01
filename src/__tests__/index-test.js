@@ -1,7 +1,7 @@
 const babel = require('babel-core');
 const plugin = require('../');
 
-var data = [1,2,3,4,5];
+const data = [1,2,3,4,5];
 function expectedResult(operator) {
     switch(operator) {
         case "+":
@@ -19,8 +19,8 @@ function expectedResult(operator) {
 }
 function getTestData(operator) {
     return `
-        var arr = [${data}];
-        var res = arr.reduceWithOperator("${operator}");
+        const arr = [${data}];
+        const res = arr.reduceWithOperator("${operator}");
     `
 }
 
@@ -28,12 +28,12 @@ const operators = ["+", "-", "*", "/", "%"];
 
 operators.forEach(item => {
     it(`test reduceWithOperator with "${item}"`, () => {
-        var result = babel.transform(getTestData(item), {plugins: [plugin]});
-        var f = new Function(`
+        const result = babel.transform(getTestData(item), {plugins: [plugin]});
+        const f = new Function(`
           ${result.code};
           return res;
         `);
-        var res = f();
+        const res = f();
         expect(res).toBe(expectedResult(item));
       });
 })
