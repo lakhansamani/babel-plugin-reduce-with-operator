@@ -1,4 +1,4 @@
-const babel = require('babel-core');
+const babel = require('@babel/core');
 const plugin = require('../');
 
 const data = [1, 2, 3, 4, 5];
