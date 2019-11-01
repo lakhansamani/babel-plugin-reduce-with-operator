@@ -7,7 +7,7 @@ This plugin allows you reduce an array, without writing callback function. Examp
 - Install plugin
 
 ```bash
-yarn add @lakhansamani/babel-plugin-reduce-with-operator -D
+yarn add babel-plugin-reduce-with-operator -D
 ```
 
 - Add plugin your babel configuration file, i.e. `.babelrc`
