@@ -5,11 +5,12 @@ module.exports = function(babel) {
       name: "string-reducer",
       visitor: {
         CallExpression(path) {
-          if (path.node.callee.property.name === "reduceWithOperator" && path.node.arguments[0].type === "StringLiteral" && path.node.arguments[0].value === "+") {
+            const operators = ["+", "-", "*", "/", "%"];
+          if (path.node.callee.property.name === "reduceWithOperator" && path.node.arguments[0].type === "StringLiteral" && operators.indexOf(path.node.arguments[0].value) > -1) {
             const identifiers = [t.identifier("a"), t.identifier("c")];
             const arg = t.arrowFunctionExpression(
               identifiers,
-              t.binaryExpression("+", identifiers[0], identifiers[1])
+              t.binaryExpression(path.node.arguments[0].value, identifiers[0], identifiers[1])
             );
             path.node.callee.property.name = 'reduce';
             path.node.arguments[0] = arg;
