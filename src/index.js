@@ -14,11 +14,7 @@ module.exports = function(babel) {
 					const identifiers = [t.identifier('a'), t.identifier('c')];
 					const arg = t.arrowFunctionExpression(
 						identifiers,
-						t.binaryExpression(
-							path.node.arguments[0].value,
-							identifiers[0],
-							identifiers[1],
-						),
+						t.binaryExpression(path.node.arguments[0].value, identifiers[0], identifiers[1]),
 					);
 					path.node.callee.property.name = 'reduce';
 					path.node.arguments[0] = arg;

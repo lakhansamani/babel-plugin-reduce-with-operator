@@ -18,9 +18,9 @@ function expectedResult(operator) {
 }
 function getTestData(operator) {
 	return `
-        const arr = [${data}];
-        const res = arr.reduceWithOperator("${operator}");
-    `;
+		const arr = [${data}];
+		const res = arr.reduceWithOperator("${operator}");
+	`;
 }
 
 const operators = ['+', '-', '*', '/', '%'];
@@ -29,9 +29,9 @@ operators.forEach(item => {
 	it(`test reduceWithOperator with "${item}"`, () => {
 		const result = babel.transform(getTestData(item), { plugins: [plugin] });
 		const f = new Function(`
-          ${result.code};
-          return res;
-        `);
+			${result.code};
+			return res;
+		`);
 		const res = f();
 		expect(res).toBe(expectedResult(item));
 	});
