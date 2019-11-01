@@ -1,5 +1,5 @@
 {
-  "name": "babel-reduce-with-operator",
+  "name": "babel-plugin-reduce-with-operator",
   "version": "1.0.0",
   "description": "plugin to use reduce function with operator",
   "main": "src/index.js",
