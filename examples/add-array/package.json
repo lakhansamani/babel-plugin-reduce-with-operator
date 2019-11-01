@@ -1,0 +1,15 @@
+{
+	"name": "add-array",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@babel/core": "^7.6.4",
+		"@babel/node": "^7.6.3",
+		"@babel/preset-env": "^7.6.3",
+		"babel-plugin-reduce-with-operator": "^1.0.0"
+	},
+	"scripts": {
+		"start": "babel-node index.js"
+	}
+}
