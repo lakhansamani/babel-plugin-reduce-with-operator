@@ -21,3 +21,13 @@ yarn add babel-plugin-reduce-with-operator -D
 }
 
 ```
+
+## Usage
+
+```js
+const arr = [1,2,3];
+const sum = arr.reduceWithOperator("+");
+console.log(sum);
+```
+
+For sample usage, you can check [examples](https://github.com/lakhansamani/babel-plugin-reduce-with-operator/tree/master/examples)
