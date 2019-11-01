@@ -1,0 +1,8 @@
+{
+  "name": "babel-reduce-with-operator",
+  "version": "1.0.0",
+  "description": "plugin to use reduce function with operator",
+  "main": "lib/index.js",
+  "author": "Lakhan Samani <lakhan.m.samani@gmail.com>",
+  "license": "MIT"
+}
