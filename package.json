@@ -4,5 +4,12 @@
   "description": "plugin to use reduce function with operator",
   "main": "lib/index.js",
   "author": "Lakhan Samani <lakhan.m.samani@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "jest": "^24.9.0"
+  },
+  "scripts": {
+    "test": "jest -u"
+  }
 }
