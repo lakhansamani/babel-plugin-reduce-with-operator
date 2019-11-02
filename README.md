@@ -6,21 +6,21 @@ This plugin allows you reduce an array, without writing callback function. Examp
 
 - Install plugin
 
-```bash
-yarn add babel-plugin-reduce-with-operator -D
-```
+  ```bash
+  yarn add babel-plugin-reduce-with-operator -D
+  ```
 
 - Add plugin your babel configuration file, i.e. `.babelrc`
 
-```js
-{
-  ...
-  "plugins": [
-    "babel-plugin-reduce-with-operator"
-  ]
-}
+  ```js
+  {
+    ...
+    "plugins": [
+      "babel-plugin-reduce-with-operator"
+    ]
+  }
 
-```
+  ```
 
 ## Usage 💻
 
