@@ -1,8 +1,13 @@
+const customParser = require('babel-operator-parser');
+
 module.exports = function(babel) {
 	const { types: t } = babel;
 
 	return {
-		name: 'string-reducer',
+		name: 'reduce-with-operator',
+		parserOverride(code, opts) {
+			return customParser.parse(code, opts);
+		},
 		visitor: {
 			CallExpression(path) {
 				const operators = ['+', '-', '*', '/', '%'];
