@@ -19,7 +19,7 @@ function expectedResult(operator) {
 function getTestData(operator) {
 	return `
 		const arr = [${data}];
-		const res = arr.reduceWithOperator("${operator}");
+		const res = arr.reduceWithOperator(${operator});
 	`;
 }
 
