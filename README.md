@@ -1,6 +1,6 @@
 # babel-plugin-reduce-with-operator
 
-This plugin allows you reduce an array, without writing callback function. Example `arr.reduceWithOperator("+")`. It looks for `reduceWithOperator` member function call and converts it into native `reduce` function with a callback. Currently it supports `+`, `-`, `*`, `/` and `%` operators.
+This plugin allows you reduce an array, without writing callback function. Example `arr.reduceWithOperator(+)`. It looks for `reduceWithOperator` member function call and converts it into native `reduce` function with a callback. Currently it supports `+`, `-`, `*`, `/` and `%` operators.
 
 > **Note:** This plugin uses [custom parser](https://github.com/lakhansamani/babel/tree/operator-parser) to support operators as arguments. 
 
