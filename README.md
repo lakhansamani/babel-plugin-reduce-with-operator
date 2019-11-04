@@ -8,28 +8,28 @@ This plugin allows you reduce an array, without writing callback function. Examp
 
 - Install plugin
 
-```bash
-yarn add babel-plugin-reduce-with-operator -D
-```
+  ```bash
+  yarn add babel-plugin-reduce-with-operator -D
+  ```
 
 - Add plugin your babel configuration file, i.e. `.babelrc`
 
-```js
-{
-  ...
-  "plugins": [
-    "babel-plugin-reduce-with-operator"
-  ]
-}
+  ```js
+  {
+    ...
+    "plugins": [
+      "babel-plugin-reduce-with-operator"
+    ]
+  }
 
-```
+  ```
 
 ## Usage 💻
 
 ```js
 const arr = [1,2,3];
 const sum = arr.reduceWithOperator(+);
-console.log(sum);
+console.log(sum); // 6
 ```
 
 For sample usage, you can check [examples](https://github.com/lakhansamani/babel-plugin-reduce-with-operator/tree/master/examples)
