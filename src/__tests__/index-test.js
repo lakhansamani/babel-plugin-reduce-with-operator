@@ -36,3 +36,13 @@ operators.forEach(item => {
 		expect(res).toBe(expectedResult(item));
 	});
 });
+
+it(`test reduceWithOperator whitespace "+  "`, () => {
+	const result = babel.transform(getTestData('+  '), { plugins: [plugin] });
+	const f = new Function(`
+			${result.code};
+			return res;
+		`);
+	const res = f();
+	expect(res).toBe(expectedResult('+'));
+});

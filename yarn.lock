@@ -532,10 +532,10 @@ babel-jest@^24.9.0:
     chalk "^2.4.2"
     slash "^2.0.0"
 
-babel-operator-parser@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/babel-operator-parser/-/babel-operator-parser-1.0.2.tgz#ab3a5a50b4e670ee8e056f40a39e095e12351371"
-  integrity sha512-EQK/aifbugGr4kI9rTtQAu/+1ZyEvTaMQ3pS8iQLdYDEESP3zAQxepwAwDN2jsRJzuKgQ2mID3A4orsYj9fyXg==
+babel-operator-parser@0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/babel-operator-parser/-/babel-operator-parser-0.1.3.tgz#35a3edf9cb5a0f8dd91a344c646050a1e43f41ef"
+  integrity sha512-oX4sqwQF6f04I6S3UF9Lsep/6Ihqzv3r2VproWWphenmKtuUiX+EdlvgjhBmAZoRxLDcnRQtIgi+l0RZNGmWrA==
 
 babel-plugin-istanbul@^5.1.0:
   version "5.2.0"

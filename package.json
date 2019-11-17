@@ -1,6 +1,6 @@
 {
 	"name": "babel-plugin-reduce-with-operator",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "plugin to use reduce function with operator",
 	"main": "src/index.js",
 	"repository": "https://github.com/lakhansamani/babel-plugin-reduce-with-operator.git",
@@ -16,6 +16,6 @@
 		"format": "prettier --write 'src/**/*.{js,json}'"
 	},
 	"dependencies": {
-		"babel-operator-parser": "^1.0.2"
+		"babel-operator-parser": "0.1.3"
 	}
 }
