@@ -16,6 +16,6 @@
 		"format": "prettier --write 'src/**/*.{js,json}'"
 	},
 	"dependencies": {
-		"babel-operator-parser": "0.1.3"
+		"babel-operator-parser": "0.1.4"
 	}
 }
